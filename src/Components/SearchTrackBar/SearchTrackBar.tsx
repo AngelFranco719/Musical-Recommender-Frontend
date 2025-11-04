@@ -12,7 +12,9 @@ export const SearchTrackBar = (props: searchBarProps) => {
   const [query, setQuery] = useState<string>("");
 
   const { data, loading, error, refetch } = useFetch<QueryResult>(
-    query ? `/api/SearchTrackByQuery?query=${query}` : null,
+    query
+      ? `https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io/api/SearchTrackByQuery?query=${query}`
+      : null,
     {},
     false
   );
