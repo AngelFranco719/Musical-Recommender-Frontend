@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-carbonite-gray: #181717;
+  --color-light-blue: #1A97E8;
+  --font-Roboto: 'Roboto', sans-serif;
+  --font-MPLUSRounded1c: 'M PLUS Rounded 1c', sans-serif;
+  --font-BalsamiqSans: 'Balsamiq Sans';
+  --font-Quicksand: 'Quicksand', sans-serif;
+  
+}
+
+@layer utilities {
+  .bg-gradient-search-small {
+    background: linear-gradient(to bottom,
+        #B932E6 -5%,
+        #181717 20%);
+  }
+
+  .bg-gradient-search-large {
+    background: linear-gradient(to bottom,
+        #32e6e6 -5%,
+        #181717 50%);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto';
+}
