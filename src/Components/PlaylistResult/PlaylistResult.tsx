@@ -25,7 +25,7 @@ export const PlaylistModal = ({ tracks }: propsPlaylistResult) => {
     const generatePlaylist = async () => {
       try {
         setLoading(true);
-        const response = await fetch("/api/getPlaylistURL", {
+        const response = await fetch("https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io/api/getPlaylistURL", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(uris),

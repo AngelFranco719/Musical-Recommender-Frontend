@@ -38,7 +38,7 @@ export const LoadingScreen = (props: propsLoadingScreen) => {
 
   useEffect(() => {
     if (connectionID)
-      setUrl(`/api/PlaylistGenerator?connectionID=${connectionID}`);
+      setUrl(`https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io/api/PlaylistGenerator?connectionID=${connectionID}`);
   }, [connectionID]);
 
   useEffect(() => {

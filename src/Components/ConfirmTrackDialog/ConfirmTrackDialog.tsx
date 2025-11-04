@@ -13,11 +13,10 @@ interface ConfirmTrackDialogProps {
 
 export const ConfirmTrackDialog = (props: ConfirmTrackDialogProps) => {
   const [duration, setDuration] = useState<string>("");
-  const [isVisible, setIsVisible] = useState(true); // controla la salida animada
+  const [isVisible, setIsVisible] = useState(true);
 
   const handleClose = () => {
     setIsVisible(false);
-    // espera la animación de salida (200 ms) antes de desmontar
     setTimeout(() => props.setConfirmWindowState(false), 200);
   };
 
