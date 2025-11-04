@@ -7,7 +7,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/api": "http://localhost:5156",
+      "/api":
+        "http://https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io",
     },
   },
 });

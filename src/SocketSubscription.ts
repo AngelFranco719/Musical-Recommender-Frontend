@@ -1,14 +1,15 @@
 import * as signalR from "@microsoft/signalr";
 
 const connection = new signalR.HubConnectionBuilder()
-  .withUrl("https://localhost:5156/progresshub")
+  .withUrl(
+    "https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io/progresshub"
+  )
   .configureLogging(signalR.LogLevel.Information)
   .build();
 
 connection.on("getFeedback", (artists) => {
   console.log("Recibí feedback del servidor: ", artists);
 });
-
 
 connection
   .start()
