@@ -17,7 +17,7 @@ export const SocketProvider = ({ children, }) => {
     const timerRef = useRef(null);
     useEffect(() => {
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("http://192.168.137.1:5156/progresshub")
+            .withUrl("https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io/progresshub")
             .configureLogging(signalR.LogLevel.Information)
             .withAutomaticReconnect()
             .build();

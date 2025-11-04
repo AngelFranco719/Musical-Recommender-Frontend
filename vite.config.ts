@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api":
-        "http://https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io",
+        "https://spotify-backend.agreeablemushroom-8c2dff51.westus2.azurecontainerapps.io",
     },
   },
 });
