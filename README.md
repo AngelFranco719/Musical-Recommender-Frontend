@@ -111,7 +111,6 @@ La aplicación usa un tema espacial/estelar con:
 
 ## 📱 Características de UI/UX
 
--   **Diseño responsivo**: Optimizado para móviles y escritorio
 -   **Animaciones fluidas**: Transiciones suaves entre estados
 -   **Feedback visual**: Indicadores de carga y progreso en tiempo real
 -   **Confirmaciones**: Diálogos de confirmación para acciones importantes
